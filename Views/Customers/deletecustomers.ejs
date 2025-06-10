@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+<link rel="stylesheet" href="/Stylesheet/deletecustomer.css">
+
+<div class="delete-container">
+  <h2 class="title">Confirm Delete Customer</h2>
+
+  <p>Are you sure you want to delete customer <strong><%= customer.name %></strong> who bought <strong><%= customer.medicineName %></strong>?</p>
+
+  <form action="/customers/delete" method="POST" class="delete-form">
+    <input type="hidden" name="id" value="<%= customer._id %>">
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a href="/customers" class="btn btn-secondary">Cancel</a>
+  </form>
+</div>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,144 @@
+<%- include('../partials/header') %>
+<link rel="stylesheet" href="/stylesheet/sellproducts.css">
+
+<div class="add-medicine-container">
+  <div class="add-medicine-card">
+    <div class="form-header">
+      <i class="fas fa-cash-register"></i>
+      <h1>Sell Product</h1>
+      <p>Fill in the details below to sell a medicine to the customer</p>
+    </div>
+
+    <% if (successMessage) { %>
+      <div class="success-alert" id="autoMessage">
+        <i class="fas fa-check-circle"></i> <%= successMessage %>
+      </div>
+    <% } %>
+
+    <% if (error) { %>
+      <div class="error-alert">
+        <i class="fas fa-exclamation-circle"></i> <%= error %>
+      </div>
+    <% } %>
+
+    <form action="/customers/sell" method="POST" class="add-medicine-form" id="sellForm">
+      <div class="form-group">
+        <label for="customerName">Customer Name</label>
+        <div class="input-with-icon">
+          <i class="fas fa-user"></i>
+          <input type="text" id="customerName" name="name" required placeholder="Enter customer's name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <div class="input-with-icon">
+          <i class="fas fa-phone"></i>
+          <input type="text" id="phone" name="phone" required placeholder="+92XXXXXXXXXX" value="+92">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <div class="input-with-icon">
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" id="address" name="address" placeholder="Enter address">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="medicineName">Select Medicine</label>
+        <div class="input-with-icon">
+          <i class="fas fa-pills"></i>
+          <input type="text" id="medicineName" name="medicineName" list="medicineList" required placeholder="Start typing...">
+          <datalist id="medicineList">
+            <% medicines.forEach(med => { %>
+              <option value="<%= med.name %>"></option>
+            <% }) %>
+          </datalist>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="price">Price (Auto)</label>
+          <div class="input-with-icon">
+            <i class="fas fa-rupee-sign"></i>
+            <input type="text" id="price" name="price" readonly placeholder="Auto-filled">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <div class="input-with-icon">
+            <i class="fas fa-sort-numeric-up"></i>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="totalPrice">Total (Auto)</label>
+        <div class="input-with-icon">
+          <i class="fas fa-money-bill-wave"></i>
+          <input type="text" id="totalPrice" name="totalPrice" readonly placeholder="Auto-calculated">
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-shopping-cart"></i> Sell Product
+        </button>
+        <a href="/customers" class="cancel-btn">
+          <i class="fas fa-times"></i> Cancel
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  const medicineData = <%- JSON.stringify(medicines || []) %>;
+
+  const medicineInput = document.getElementById("medicineName");
+  const priceInput = document.getElementById("price");
+  const quantityInput = document.getElementById("quantity");
+  const totalPriceInput = document.getElementById("totalPrice");
+  const phoneInput = document.getElementById("phone");
+
+  function updatePriceAndTotal() {
+    const selectedMedicine = medicineData.find(med => med.name.toLowerCase() === medicineInput.value.toLowerCase());
+    if (selectedMedicine) {
+      priceInput.value = selectedMedicine.price;
+      const quantity = parseInt(quantityInput.value) || 0;
+      totalPriceInput.value = quantity * selectedMedicine.price;
+    } else {
+      priceInput.value = '';
+      totalPriceInput.value = '';
+    }
+  }
+
+  medicineInput.addEventListener("input", updatePriceAndTotal);
+  quantityInput.addEventListener("input", updatePriceAndTotal);
+
+  phoneInput.addEventListener("input", () => {
+    if (!phoneInput.value.startsWith("+92")) {
+      phoneInput.value = "+92";
+    }
+    const digitsOnly = phoneInput.value.replace("+92", "").replace(/\D/g, '');
+    if (digitsOnly.length > 10) {
+      phoneInput.value = "+92 " + digitsOnly.slice(0, 10);
+    } else {
+      phoneInput.value = "+92 " + digitsOnly;
+    }
+  });
+
+  const msg = document.getElementById("autoMessage");
+  if (msg) {
+    setTimeout(() => {
+      msg.style.display = "none";
+    }, 2000);
+  }
+</script>
+
+<%- include('../partials/footer') %>

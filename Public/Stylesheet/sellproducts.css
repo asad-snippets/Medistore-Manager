@@ -1,0 +1,152 @@
+/* Container */
+/* Container - keep background image from body */
+.add-medicine-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* Card with semi-transparent background */
+.add-medicine-card {
+  background: rgba(255, 255, 255, 0.92); /* Semi-transparent white */
+  padding: 30px 35px;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 600px;
+  backdrop-filter: blur(6px);
+}
+
+
+/* Header */
+.form-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-header i {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.form-header h1 {
+  font-size: 26px;
+  margin: 0;
+  color: #333;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Success Alert */
+.success-alert {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Form Styling */
+.add-medicine-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding: 10px 12px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s border;
+}
+
+.input-with-icon input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Row Layout for Price & Stock */
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.submit-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+.cancel-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #c5c5c5;
+}

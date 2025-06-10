@@ -1,0 +1,73 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/stylesheet/editmedicine.css">
+
+<div class="add-medicine-container">
+  <div class="add-medicine-card">
+    <div class="form-header">
+      <i class="fas fa-pills"></i>
+      <h1>Edit Medicine</h1>
+      <p>Update the details below to modify the medicine information</p>
+    </div>
+
+    <% if (successMessage) { %>
+      <div class="success-alert">
+        <i class="fas fa-check-circle"></i> <%= successMessage %>
+      </div>
+
+      <script>
+        setTimeout(() => {
+          window.location.href = "/records";
+        }, 2000);
+      </script>
+    <% } %>
+
+    <form action="/update" method="POST" class="add-medicine-form">
+      <input type="hidden" name="id" value="<%= medicine._id %>">
+
+      <div class="form-group">
+        <label for="name">Medicine Name</label>
+        <div class="input-with-icon">
+          <i class="fas fa-medkit"></i>
+          <input type="text" id="name" name="name" placeholder="e.g., Paracetamol 500mg" value="<%= medicine.name %>" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <div class="input-with-icon">
+          <i class="fas fa-tags"></i>
+          <input type="text" id="category" name="category" placeholder="e.g., Painkiller, Antibiotic" value="<%= medicine.category %>" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="price">Price (RS)</label>
+          <div class="input-with-icon">
+            <i class="fas fa-rupee-sign"></i>
+            <input type="number" id="price" name="price" placeholder="0.00" step="0.01" min="0" value="<%= medicine.price %>" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="stock">Stock Quantity</label>
+          <div class="input-with-icon">
+            <i class="fas fa-boxes"></i>
+            <input type="number" id="stock" name="stock" placeholder="0" min="0" value="<%= medicine.stock %>" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-edit"></i> Update Medicine
+        </button>
+        <a href="/records" class="cancel-btn">
+          <i class="fas fa-times"></i> Cancel
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

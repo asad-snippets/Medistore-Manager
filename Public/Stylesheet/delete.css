@@ -1,0 +1,124 @@
+/* Form Styles for Update and Delete Pages */
+.edit-medicine,
+.delete-confirm {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.edit-medicine h1,
+.delete-confirm h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Medicine Form Styles */
+.medicine-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Delete Confirmation Box */
+.confirm-box {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.confirm-box p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.warning {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Button Styles */
+.update-btn,
+.delete-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.update-btn {
+  background: #2ecc71;
+  color: white;
+}
+
+.update-btn:hover {
+  background: #27ae60;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.cancel-btn {
+  background: #95a5a6;
+  color: white;
+  margin-left: 10px;
+}
+
+.cancel-btn:hover {
+  background: #7f8c8d;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.success-alert {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 16px;
+  margin: 15px auto;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  max-width: 500px;
+}

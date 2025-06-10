@@ -1,0 +1,52 @@
+<%- include('../partials/header') %>
+<link rel="stylesheet" href="/Stylesheet/showcustomers.css">
+
+<div class="container">
+  <h2>Customer List</h2>
+
+  <% if (successMessage) { %>
+    <p class="success"><%= successMessage %></p>
+  <% } %>
+  <% if (error) { %>
+    <p class="error"><%= error %></p>
+  <% } %>
+
+  <a href="/customers/sell" class="add-btn">+ Sell New Product</a>
+  <a href="/customers/export" class="export-btn">Export to Excel</a>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Medicine</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% customers.forEach(customer => { %>
+        <tr>
+          <td><%= customer.name %></td>
+          <td><%= customer.phone %></td>
+          <td><%= customer.address || '-' %></td>
+          <td><%= customer.medicineName %></td>
+          <td><%= customer.price %></td>
+          <td><%= customer.quantity %></td>
+          <td><%= customer.totalPrice %></td>
+          <td>
+            <a href="/customers/edit/<%= customer._id %>" class="edit-btn">Edit</a>
+            <a href="/customers/delete-confirm?id=<%= customer._id %>" class="delete-btn">Delete</a>
+
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>
+
+<%- include('../partials/footer') %>

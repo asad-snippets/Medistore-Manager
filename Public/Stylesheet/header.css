@@ -1,0 +1,141 @@
+body {
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Blend navbar background with page background */
+.custom-navbar {
+  background-color: transparent; /* semi-transparent black */
+  backdrop-filter: blur(8px);
+  transition: background-color 0.4s ease;
+}
+
+/* Nav links: no background radius, smooth hover effect with lift and underline */
+.nav-link {
+  position: relative;
+  color: #fff !important;
+  padding: 8px 12px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffcc00;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffcc00 !important;
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+
+.account-btn {
+  font-size: 1.1rem;             
+  padding: 8px 20px;             
+  border-radius: 6px;            
+  background-color: transparent; 
+  color: #ffffff;               
+  border: 1px solid transparent; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 44px;                  
+  display: flex;
+  align-items: center;
+  justify-content: center;       
+  min-width: 100px;              
+  white-space: nowrap;        
+}
+
+.account-btn:hover,
+.account-btn:focus {
+  background-color: #ffc107;    /* Bootstrap warning color */
+  color: #212529;               /* Darker text */
+  border-color: #ffc107;
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(255, 193, 7, 0.6);
+  outline: none;
+}
+
+.account-btn::after {
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.account-btn i {
+  font-size: 1.1rem;
+}
+
+.logout-link {
+  color: #333 !important;
+  transition: color 0.3s ease;
+}
+
+.logout-link:hover,
+.logout-link:focus {
+  color: #d9534f !important; 
+  font-weight: 600;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.owner-login-btn {
+  border: 1.5px solid #fff;
+  background-color: transparent;
+  color: #fff !important;
+  padding: 7px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.owner-login-btn:hover,
+.owner-login-btn:focus {
+  background-color: white;
+  color: black !important;
+  border-color: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.register-store-btn {
+  background-color: #007bff;
+  color: #fff !important;
+  padding: 7px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.register-store-btn:hover,
+.register-store-btn:focus {
+  background-color: #0056b3;
+  color: #fff !important;
+  box-shadow: 0 0 12px #0056b3;
+  text-decoration: none;
+}

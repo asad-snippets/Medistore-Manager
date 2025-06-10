@@ -1,0 +1,56 @@
+<%- include('../Partials/header') %>
+  <link rel="stylesheet" href="/Stylesheet/account.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="account-container">
+    <h2><i class="fas fa-user-circle"></i> My Account</h2>
+
+    <% if (error) { %>
+      <div class="alert alert-error"><%= error %></div>
+    <% } %>
+    <% if (success) { %>
+      <div class="alert alert-success"><%= success %></div>
+    <% } %>
+
+    <form action="/auth/account" method="POST">
+  <div class="form-group">
+    <label for="shopName"><i class="fas fa-store"></i> Shop Name:</label>
+    <input type="text" id="shopName" name="shopName" value="<%= user.shopName %>" required>
+  </div>
+
+  <div class="form-group">
+    <label for="shopAddress"><i class="fas fa-map-marker-alt"></i> Shop Address:</label>
+    <textarea id="shopAddress" name="shopAddress" rows="2" placeholder="Enter your shop address"><%= user.shopAddress || '' %></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+    <input type="email" id="email" name="email" value="<%= user.email %>" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+    <input type="text" id="phone" name="phone" value="<%= user.phone %>">
+  </div>
+
+  <div class="form-group">
+    <label for="oldPassword"><i class="fas fa-key"></i> Old Password:</label>
+    <input type="password" id="oldPassword" name="oldPassword" placeholder="Enter your current password">
+  </div>
+
+  <div class="form-group">
+    <label for="newPassword"><i class="fas fa-lock"></i> New Password:</label>
+    <input type="password" id="newPassword" name="newPassword" placeholder="Leave blank to keep current password">
+  </div>
+
+  <div class="form-group">
+    <label for="confirmPassword"><i class="fas fa-lock"></i> Confirm New Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your new password">
+  </div>
+
+  <button type="submit" class="btn-save"><i class="fas fa-save"></i> Save Changes</button>
+</form>
+
+  </div>
+<%- include('../Partials/footer') %>

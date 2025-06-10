@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Paracetamol 500mg Batch-1",
+        "category": "Painkiller",
+        "price": 50,
+        "stock": 200
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-1",
+        "category": "Painkiller",
+        "price": 70,
+        "stock": 150
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-1",
+        "category": "Antibiotic",
+        "price": 120,
+        "stock": 100
+    },
+    {
+        "name": "Cetirizine 10mg Batch-1",
+        "category": "Antihistamine",
+        "price": 30,
+        "stock": 250
+    },
+    {
+        "name": "Aspirin 75mg Batch-1",
+        "category": "Blood thinner",
+        "price": 60,
+        "stock": 180
+    },
+    {
+        "name": "Metformin 500mg Batch-1",
+        "category": "Diabetes",
+        "price": 90,
+        "stock": 160
+    },
+    {
+        "name": "Omeprazole 20mg Batch-1",
+        "category": "Acid reducer",
+        "price": 80,
+        "stock": 140
+    },
+    {
+        "name": "Loratadine 10mg Batch-1",
+        "category": "Antihistamine",
+        "price": 40,
+        "stock": 210
+    },
+    {
+        "name": "Azithromycin 250mg Batch-1",
+        "category": "Antibiotic",
+        "price": 130,
+        "stock": 90
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-1",
+        "category": "Bronchodilator",
+        "price": 200,
+        "stock": 120
+    },
+    {
+        "name": "Paracetamol 500mg Batch-2",
+        "category": "Painkiller",
+        "price": 55,
+        "stock": 190
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-2",
+        "category": "Painkiller",
+        "price": 75,
+        "stock": 140
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-2",
+        "category": "Antibiotic",
+        "price": 125,
+        "stock": 90
+    },
+    {
+        "name": "Cetirizine 10mg Batch-2",
+        "category": "Antihistamine",
+        "price": 35,
+        "stock": 240
+    },
+    {
+        "name": "Aspirin 75mg Batch-2",
+        "category": "Blood thinner",
+        "price": 65,
+        "stock": 170
+    },
+    {
+        "name": "Metformin 500mg Batch-2",
+        "category": "Diabetes",
+        "price": 95,
+        "stock": 150
+    },
+    {
+        "name": "Omeprazole 20mg Batch-2",
+        "category": "Acid reducer",
+        "price": 85,
+        "stock": 130
+    },
+    {
+        "name": "Loratadine 10mg Batch-2",
+        "category": "Antihistamine",
+        "price": 45,
+        "stock": 200
+    },
+    {
+        "name": "Azithromycin 250mg Batch-2",
+        "category": "Antibiotic",
+        "price": 135,
+        "stock": 80
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-2",
+        "category": "Bronchodilator",
+        "price": 205,
+        "stock": 110
+    },
+    {
+        "name": "Paracetamol 500mg Batch-3",
+        "category": "Painkiller",
+        "price": 60,
+        "stock": 180
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-3",
+        "category": "Painkiller",
+        "price": 80,
+        "stock": 130
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-3",
+        "category": "Antibiotic",
+        "price": 130,
+        "stock": 80
+    },
+    {
+        "name": "Cetirizine 10mg Batch-3",
+        "category": "Antihistamine",
+        "price": 40,
+        "stock": 230
+    },
+    {
+        "name": "Aspirin 75mg Batch-3",
+        "category": "Blood thinner",
+        "price": 70,
+        "stock": 160
+    },
+    {
+        "name": "Metformin 500mg Batch-3",
+        "category": "Diabetes",
+        "price": 100,
+        "stock": 140
+    },
+    {
+        "name": "Omeprazole 20mg Batch-3",
+        "category": "Acid reducer",
+        "price": 90,
+        "stock": 120
+    },
+    {
+        "name": "Loratadine 10mg Batch-3",
+        "category": "Antihistamine",
+        "price": 50,
+        "stock": 190
+    },
+    {
+        "name": "Azithromycin 250mg Batch-3",
+        "category": "Antibiotic",
+        "price": 140,
+        "stock": 70
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-3",
+        "category": "Bronchodilator",
+        "price": 210,
+        "stock": 100
+    },
+    {
+        "name": "Paracetamol 500mg Batch-4",
+        "category": "Painkiller",
+        "price": 65,
+        "stock": 170
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-4",
+        "category": "Painkiller",
+        "price": 85,
+        "stock": 120
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-4",
+        "category": "Antibiotic",
+        "price": 135,
+        "stock": 70
+    },
+    {
+        "name": "Cetirizine 10mg Batch-4",
+        "category": "Antihistamine",
+        "price": 45,
+        "stock": 220
+    },
+    {
+        "name": "Aspirin 75mg Batch-4",
+        "category": "Blood thinner",
+        "price": 75,
+        "stock": 150
+    },
+    {
+        "name": "Metformin 500mg Batch-4",
+        "category": "Diabetes",
+        "price": 105,
+        "stock": 130
+    },
+    {
+        "name": "Omeprazole 20mg Batch-4",
+        "category": "Acid reducer",
+        "price": 95,
+        "stock": 110
+    },
+    {
+        "name": "Loratadine 10mg Batch-4",
+        "category": "Antihistamine",
+        "price": 55,
+        "stock": 180
+    },
+    {
+        "name": "Azithromycin 250mg Batch-4",
+        "category": "Antibiotic",
+        "price": 145,
+        "stock": 60
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-4",
+        "category": "Bronchodilator",
+        "price": 215,
+        "stock": 90
+    },
+    {
+        "name": "Paracetamol 500mg Batch-5",
+        "category": "Painkiller",
+        "price": 70,
+        "stock": 160
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-5",
+        "category": "Painkiller",
+        "price": 90,
+        "stock": 110
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-5",
+        "category": "Antibiotic",
+        "price": 140,
+        "stock": 60
+    },
+    {
+        "name": "Cetirizine 10mg Batch-5",
+        "category": "Antihistamine",
+        "price": 50,
+        "stock": 210
+    },
+    {
+        "name": "Aspirin 75mg Batch-5",
+        "category": "Blood thinner",
+        "price": 80,
+        "stock": 140
+    },
+    {
+        "name": "Metformin 500mg Batch-5",
+        "category": "Diabetes",
+        "price": 110,
+        "stock": 120
+    },
+    {
+        "name": "Omeprazole 20mg Batch-5",
+        "category": "Acid reducer",
+        "price": 100,
+        "stock": 100
+    },
+    {
+        "name": "Loratadine 10mg Batch-5",
+        "category": "Antihistamine",
+        "price": 60,
+        "stock": 170
+    },
+    {
+        "name": "Azithromycin 250mg Batch-5",
+        "category": "Antibiotic",
+        "price": 150,
+        "stock": 50
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-5",
+        "category": "Bronchodilator",
+        "price": 220,
+        "stock": 80
+    },
+    {
+        "name": "Paracetamol 500mg Batch-6",
+        "category": "Painkiller",
+        "price": 75,
+        "stock": 150
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-6",
+        "category": "Painkiller",
+        "price": 95,
+        "stock": 100
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-6",
+        "category": "Antibiotic",
+        "price": 145,
+        "stock": 50
+    },
+    {
+        "name": "Cetirizine 10mg Batch-6",
+        "category": "Antihistamine",
+        "price": 55,
+        "stock": 200
+    },
+    {
+        "name": "Aspirin 75mg Batch-6",
+        "category": "Blood thinner",
+        "price": 85,
+        "stock": 130
+    },
+    {
+        "name": "Metformin 500mg Batch-6",
+        "category": "Diabetes",
+        "price": 115,
+        "stock": 110
+    },
+    {
+        "name": "Omeprazole 20mg Batch-6",
+        "category": "Acid reducer",
+        "price": 105,
+        "stock": 90
+    },
+    {
+        "name": "Loratadine 10mg Batch-6",
+        "category": "Antihistamine",
+        "price": 65,
+        "stock": 160
+    },
+    {
+        "name": "Azithromycin 250mg Batch-6",
+        "category": "Antibiotic",
+        "price": 155,
+        "stock": 40
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-6",
+        "category": "Bronchodilator",
+        "price": 225,
+        "stock": 70
+    },
+    {
+        "name": "Paracetamol 500mg Batch-7",
+        "category": "Painkiller",
+        "price": 80,
+        "stock": 140
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-7",
+        "category": "Painkiller",
+        "price": 100,
+        "stock": 90
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-7",
+        "category": "Antibiotic",
+        "price": 150,
+        "stock": 40
+    },
+    {
+        "name": "Cetirizine 10mg Batch-7",
+        "category": "Antihistamine",
+        "price": 60,
+        "stock": 190
+    },
+    {
+        "name": "Aspirin 75mg Batch-7",
+        "category": "Blood thinner",
+        "price": 90,
+        "stock": 120
+    },
+    {
+        "name": "Metformin 500mg Batch-7",
+        "category": "Diabetes",
+        "price": 120,
+        "stock": 100
+    },
+    {
+        "name": "Omeprazole 20mg Batch-7",
+        "category": "Acid reducer",
+        "price": 110,
+        "stock": 80
+    },
+    {
+        "name": "Loratadine 10mg Batch-7",
+        "category": "Antihistamine",
+        "price": 70,
+        "stock": 150
+    },
+    {
+        "name": "Azithromycin 250mg Batch-7",
+        "category": "Antibiotic",
+        "price": 160,
+        "stock": 30
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-7",
+        "category": "Bronchodilator",
+        "price": 230,
+        "stock": 60
+    },
+    {
+        "name": "Paracetamol 500mg Batch-8",
+        "category": "Painkiller",
+        "price": 85,
+        "stock": 130
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-8",
+        "category": "Painkiller",
+        "price": 105,
+        "stock": 80
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-8",
+        "category": "Antibiotic",
+        "price": 155,
+        "stock": 30
+    },
+    {
+        "name": "Cetirizine 10mg Batch-8",
+        "category": "Antihistamine",
+        "price": 65,
+        "stock": 180
+    },
+    {
+        "name": "Aspirin 75mg Batch-8",
+        "category": "Blood thinner",
+        "price": 95,
+        "stock": 110
+    },
+    {
+        "name": "Metformin 500mg Batch-8",
+        "category": "Diabetes",
+        "price": 125,
+        "stock": 90
+    },
+    {
+        "name": "Omeprazole 20mg Batch-8",
+        "category": "Acid reducer",
+        "price": 115,
+        "stock": 70
+    },
+    {
+        "name": "Loratadine 10mg Batch-8",
+        "category": "Antihistamine",
+        "price": 75,
+        "stock": 140
+    },
+    {
+        "name": "Azithromycin 250mg Batch-8",
+        "category": "Antibiotic",
+        "price": 165,
+        "stock": 20
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-8",
+        "category": "Bronchodilator",
+        "price": 235,
+        "stock": 50
+    },
+    {
+        "name": "Paracetamol 500mg Batch-9",
+        "category": "Painkiller",
+        "price": 90,
+        "stock": 120
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-9",
+        "category": "Painkiller",
+        "price": 110,
+        "stock": 70
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-9",
+        "category": "Antibiotic",
+        "price": 160,
+        "stock": 20
+    },
+    {
+        "name": "Cetirizine 10mg Batch-9",
+        "category": "Antihistamine",
+        "price": 70,
+        "stock": 170
+    },
+    {
+        "name": "Aspirin 75mg Batch-9",
+        "category": "Blood thinner",
+        "price": 100,
+        "stock": 100
+    },
+    {
+        "name": "Metformin 500mg Batch-9",
+        "category": "Diabetes",
+        "price": 130,
+        "stock": 80
+    },
+    {
+        "name": "Omeprazole 20mg Batch-9",
+        "category": "Acid reducer",
+        "price": 120,
+        "stock": 60
+    },
+    {
+        "name": "Loratadine 10mg Batch-9",
+        "category": "Antihistamine",
+        "price": 80,
+        "stock": 130
+    },
+    {
+        "name": "Azithromycin 250mg Batch-9",
+        "category": "Antibiotic",
+        "price": 170,
+        "stock": 10
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-9",
+        "category": "Bronchodilator",
+        "price": 240,
+        "stock": 40
+    },
+    {
+        "name": "Paracetamol 500mg Batch-10",
+        "category": "Painkiller",
+        "price": 95,
+        "stock": 110
+    },
+    {
+        "name": "Ibuprofen 400mg Batch-10",
+        "category": "Painkiller",
+        "price": 115,
+        "stock": 60
+    },
+    {
+        "name": "Amoxicillin 500mg Batch-10",
+        "category": "Antibiotic",
+        "price": 165,
+        "stock": 10
+    },
+    {
+        "name": "Cetirizine 10mg Batch-10",
+        "category": "Antihistamine",
+        "price": 75,
+        "stock": 160
+    },
+    {
+        "name": "Aspirin 75mg Batch-10",
+        "category": "Blood thinner",
+        "price": 105,
+        "stock": 90
+    },
+    {
+        "name": "Metformin 500mg Batch-10",
+        "category": "Diabetes",
+        "price": 135,
+        "stock": 70
+    },
+    {
+        "name": "Omeprazole 20mg Batch-10",
+        "category": "Acid reducer",
+        "price": 125,
+        "stock": 50
+    },
+    {
+        "name": "Loratadine 10mg Batch-10",
+        "category": "Antihistamine",
+        "price": 85,
+        "stock": 120
+    },
+    {
+        "name": "Azithromycin 250mg Batch-10",
+        "category": "Antibiotic",
+        "price": 175,
+        "stock": 0
+    },
+    {
+        "name": "Salbutamol Inhaler Batch-10",
+        "category": "Bronchodilator",
+        "price": 245,
+        "stock": 30
+    }
+]

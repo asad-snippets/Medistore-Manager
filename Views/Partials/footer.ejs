@@ -1,0 +1,68 @@
+<head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" href="/Stylesheet/footer.css">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="/Stylesheet/footer.css">
+</head>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3><%= (user && user.shopName) ? user.shopName : 'MediStore Manager' %></h3>
+      <p>Your complete pharmacy management solution</p>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/records">Inventory</a></li>
+        <li><a href="/add">Add Medicine</a></li>
+        <% if (!user) { %>
+          <li><a href="/auth/login">Login</a></li>
+        <% } else { %>
+          <li><a href="/auth/logout">Logout</a></li>
+        <% } %>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:<%= (user && user.email) ? user.email : 'greenpharma@gmail.com' %>">
+            <%= (user && user.email) ? user.email : 'No info' %>
+          </a>
+        </li>
+        <li>
+          <i class="fas fa-phone"></i> +92 300 0000000
+        </li>
+        <li>
+          <i class="fas fa-map-marker-alt"></i> <%= (user && user.shopName) ? user.shopName : 'Medistore Manager' %>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="https://facebook.com/medistoremanager" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/medistoremgr" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/medistoremanager" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/company/medistoremanager" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2023 <%= (user && user.shopName) ? user.shopName : 'MediStore Manager' %>. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="/privacy">Privacy Policy</a> | 
+      <a href="/terms">Terms of Service</a> | 
+      <a href="/contact">Contact</a>
+    </p>
+  </div>
+</footer>
+
+</footer>

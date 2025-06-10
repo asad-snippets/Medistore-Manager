@@ -1,0 +1,74 @@
+<%- include('Partials/header') %>
+<link rel="stylesheet" href="/Stylesheet/dashboard.css">
+<script defer src="/Javascript/dashboard.js"></script>
+
+<div class="dashboard-container">
+  <div class="dashboard-header">
+    <% if (user && user.shopName) { %>
+      <h1>Welcome to <%= user.shopName %>!</h1> <!-- Display shop name if logged in -->
+    <% } else { %>
+      <h1>Welcome to MediStore Manager</h1> <!-- Default text if no user is logged in -->
+    <% } %>
+    <p class="dashboard-subtitle">Your pharmacy management system</p>
+  </div>
+
+<!-- <div class="carousel-container">
+  <div class="carousel-wrapper">
+    <img src="/Images/slide1.jpg" class="carousel-image active" alt="Slide 1">
+    <img src="/Images/slide2.jpg" class="carousel-image" alt="Slide 2">
+    <img src="/Images/slide3.jpg" class="carousel-image" alt="Slide 3">
+    <img src="/Images/slide4.jpg" class="carousel-image" alt="Slide 4">
+  </div>
+</div> -->
+
+
+
+  <div class="stats-grid">
+    <div class="stat-card total-medicines">
+      <div class="stat-icon">
+        <i class="fas fa-pills"></i>
+      </div>
+      <div class="stat-content">
+        <h3>Total Medicines</h3>
+        <p class="stat-value"><%= totalMedicines %></p>
+        <p class="stat-description">All medicines in inventory</p>
+      </div>
+    </div>
+
+    <div class="stat-card low-stock">
+      <div class="stat-icon">
+        <i class="fas fa-exclamation-triangle"></i>
+      </div>
+      <div class="stat-content">
+        <h3>Low Stock</h3>
+        <p class="stat-value"><%= lowStockCount %></p>
+        <p class="stat-description">Items needing restock</p>
+      </div>
+    </div>
+
+    <div class="stat-card categories">
+      <div class="stat-icon">
+        <i class="fas fa-tags"></i>
+      </div>
+      <div class="stat-content">
+        <h3>Categories</h3>
+        <p class="stat-value"><%= totalCategories %></p>
+        <p class="stat-description">Medicine categories</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick-actions">
+    <h2>Quick Actions</h2>
+    <div class="action-buttons">
+      <a href="/add" class="action-btn">
+        <i class="fas fa-plus-circle"></i> Add Medicine
+      </a>
+      <a href="/records" class="action-btn">
+        <i class="fas fa-list"></i> View Inventory
+      </a>
+    </div>
+  </div>
+</div>
+
+<%- include('Partials/footer') %>

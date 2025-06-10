@@ -1,0 +1,21 @@
+<%- include('Partials/header') %>
+<link rel="stylesheet" href="/stylesheet/delete.css">
+
+<div class="delete-confirm">
+  <h1>Delete Medicine</h1>
+  
+  <div class="confirm-box">
+    <p>Are you sure you want to permanently delete <strong><%= medicine.name %></strong>?</p>
+    <p class="warning">This action cannot be undone.</p>
+    
+    <div class="button-group">
+      <form action="/delete" method="POST">
+        <input type="hidden" name="id" value="<%= medicine._id %>">
+        <button type="submit" class="delete-btn">Yes, Delete</button>
+      </form>
+      <a href="/records" class="cancel-btn">Cancel</a>
+    </div>
+  </div>
+</div>
+
+<%- include('Partials/footer') %>
