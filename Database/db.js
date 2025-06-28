@@ -9,4 +9,4 @@ try{
         console.error("mongodb is not connected");
     }
     }
-    export default connectToDb;
+export default connectToDb;

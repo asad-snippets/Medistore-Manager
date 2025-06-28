@@ -23,6 +23,18 @@ export const postSignup = async (req, res) => {
       password 
     });
 
+    // Auto-login after signup
+    const user = await User.findOne({ email });
+    req.session.userId = user._id;
+    req.session.user = {
+      _id: user._id,
+      email: user.email,
+      shopName: user.shopName
+    };
+
+    res.redirect('/');
+    return;
+
     req.session.successMessage = 'Account created successfully!';
     res.redirect('/auth/login');
   } 
