@@ -283,6 +283,6 @@ app.get('/auth/logout', logout);
 
 app.use(authRoutes);
 
-app.listen(3000, () => {
-  console.log("MediStore Manager server is running on http://localhost:3000");
+app.listen(5000, () => {
+  console.log("MediStore Manager server is running on http://localhost:5000");
 });
